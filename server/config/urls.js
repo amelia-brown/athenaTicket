@@ -1,6 +1,6 @@
 'use strict'
 const DIALECT = 'postgres';
-const HOST = 'localhost';
+const HOST = process.env.POSTGRES || 'localhost';
 const PORT = 5432;
 const DB = 'ticket';
 const DB_USR = require('./dbAuth.js').DB_USR;
