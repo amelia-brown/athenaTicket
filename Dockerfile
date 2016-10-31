@@ -1,4 +1,4 @@
-FROM node:4
+FROM node:argon
 RUN mkdir -p /usr/src/athenaTicket
 WORKDIR /usr/src/athenaTicket
 COPY package.json /usr/src/athenaTicket/
