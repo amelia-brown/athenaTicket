@@ -12,7 +12,7 @@ let sequelize = module.exports.sequelize = new mw.sequelize(uri, {
 //table definitions
 let Ticket = module.exports.ticket =
   sequelize.define('ticket', schema.ticket);
-let RelatedArticle = module.exports.relatedArticle = 
+let RelatedArticle = module.exports.relatedArticle =
   sequelize.define('related_article', schema.relatedArticle);
 Ticket.hasMany(RelatedArticle, {as: 'relatedArticles', onDelete: 'CASCADE', onUpdate: 'CASCADE'});
 //----server initialization----

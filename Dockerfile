@@ -5,4 +5,4 @@ COPY package.json /usr/src/athenaTicket/
 RUN npm install
 COPY . /usr/src/athenaTicket
 EXPOSE 3002
-RUN npm start
+CMD npm start
